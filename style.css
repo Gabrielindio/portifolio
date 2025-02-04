@@ -1,0 +1,273 @@
+/* Aplicando a fonte 'PT Sans Narrow' ao corpo do site */
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #333;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 150px;
+    padding-bottom: 20px;
+}
+
+#sobre h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#sobre p {
+    font-size: 35px;
+    margin: 0;
+}
+
+.container {
+    padding: 20px 120px;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header */
+header {
+    color: #ffffff;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Seção de Projetos */
+.container-projetos1 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+
+.container-projetos2 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#projetos {
+    background-color: #333;
+    text-align: center;
+    color: #333;
+}
+
+#projetos h2 {
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+.projeto {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 100%; /* Define uma altura fixa */
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+    border-radius: 10px 10px 0 0; /* Arredonda apenas a parte superior */
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.projeto h3 {
+    font-size: 30px;
+    margin: 2px;
+    color: #1abc9c;
+    margin-bottom: 5px;
+}
+
+.projeto p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.projeto a {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.projeto a:hover {
+    background-color: #16a085;
+}
+
+
+/* Seção de Habilidades */
+#habilidades {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+#habilidades h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habilidades ul li {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 20px 35px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 180px;
+    text-align: center;
+}
+
+#habilidades ul li img {
+    width: 150px;  /* Ajuste o tamanho da imagem */
+    height: 150px; /* Ajuste a altura da imagem */
+}
+
+#habilidades ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*CONTATO*/
+
+#contact-info {
+    width: 100%;
+    padding: 40px;
+    background-color: #333;
+    text-align: center;
+}
+
+.contact-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact-info h5 {
+    font-size: 28px;
+    color: #1abc9c;
+    margin-bottom: 20px;
+}
+
+.contact-wrapper h6 {
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-details li {
+    margin: 10px 0;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #4CAF50;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
